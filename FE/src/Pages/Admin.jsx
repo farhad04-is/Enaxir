@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AllDatacontextt } from '../Context/AllDatacontext';
 import './Admin.css';
+import { Link } from 'react-router-dom';
 
 function Admin() {
     const { data, deletedata } = useContext(AllDatacontextt);
@@ -59,6 +60,7 @@ function Admin() {
                     }
                 </tbody>
             </table>
+            <Link to='addadmin'>add</Link>
         </>
     );
 }

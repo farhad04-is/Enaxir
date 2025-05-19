@@ -5,7 +5,7 @@ import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import Nopage from "./Pages/Nopage";
 import Basket from "./Pages/Basket";
-import Add from "./Pages/Add";
+import { SignupForm } from "./Pages/SignupForm";
 import Admin from "./Pages/Admin";
 import Whislist from "./Pages/Whislist";
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="basket" element={<Basket />} />
-          <Route path="addadmin" element={<Add />} />
+          <Route path="addadmin" element={<SignupForm />} />
           <Route path="admin" element={<Admin />} />
           <Route path="whislist" element={<Whislist />} />
           <Route path="*" element={<Nopage />} />
